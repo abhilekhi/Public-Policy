@@ -97495,7 +97495,7 @@ div#banner {
   border
   margin: 0 auto;
   padding-top: 0px;
-  padding-left: 500px;
+  padding-left: 350px;
   font-size: 20px;
   background-color: #343a40;
   color: white;
@@ -97597,19 +97597,29 @@ div#banner {
 
     
     <div id="form-content" class="column">
-        <h3>Please enter your banking and loan information </h3>
+        <h3>Please enter your loan information </h3>
 
         <form action="" method="POST">
+          <p><strong>Were you a Pell Grant Recipient</strong></p>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">Yes</label>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="html">No</label><br>
+
+
             <label for="lp" >Loan Provider: </label>
             <input type="text" placeholder="Loan Provider", id="lp"><br>
 
             <label for="instinum" >Institution: </label>
             <input type="text" placeholder="Institution Number" id="instinum" ><br>
+
         </form>
+
+        <h3>Please enter your banking information </h3>
         <form action="" method="POST">
-            <p><strong>Account Information<strong></strong></p>
+            
             <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">Checkings</label><br>
+            <label for="html">Checkings</label>
             <input type="radio" id="css" name="fav_language" value="CSS">
             <label for="html">Savings</label><br>
         </form>
